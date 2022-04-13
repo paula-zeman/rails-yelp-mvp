@@ -25,7 +25,7 @@ class RestaurantsController < ApplicationController
   def edit
   end
 
-  def updatefnew
+  def update
     @restaurant.update(restaurant_params)
   end
 

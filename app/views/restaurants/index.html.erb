@@ -1,0 +1,15 @@
+
+<div style="margin: 24px;">
+  <h2> All Restaurants</h2>
+</div>
+
+<div style="margin: 24px;">
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    * <%= restaurant.category %> *
+            <br>
+      <%= restaurant.address %></li>
+  <% end %>
+</ul>
+</div>
